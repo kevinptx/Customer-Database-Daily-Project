@@ -1,15 +1,5 @@
 console.log(customers)
 
-let titleDiv = document.createElement("div")
-let main = document.querySelector(".main")
-
-let title = document.createElement("h1")
-title.innerHTML = "Internal Company Directory"
-title.className = "title"
-
-titleDiv.appendChild(title)
-document.body.appendChild(titleDiv)
-
 for(var i = 0; i<customers.results.length; i++) {
 
     let customer = customers.results[i]
@@ -28,8 +18,12 @@ for(var i = 0; i<customers.results.length; i++) {
     email.className = "email"
 
     let address = document.createElement("label")
-    address.innerHTML = `${customer.location.street} ${customer.location.city}, ${customer.location.state} ${customer.location.postcode}`
+    address.innerHTML = `${customer.location.street}`
     address.className = "address"
+
+    let cityState = document.createElement("label")
+    cityState.innerHTML = `${customer.location.city}, ${customer.location.state} ${customer.location.postcode}`
+    cityState.className = "city"
 
     let phoneNum = document.createElement("label")
     phoneNum.innerHTML = `${customer.phone}`
@@ -44,8 +38,9 @@ for(var i = 0; i<customers.results.length; i++) {
     div.appendChild(labelName)
     div.appendChild(email)
     div.appendChild(address)
+    div.appendChild(cityState)
     div.appendChild(phoneNum)
     div.appendChild(social)
-    document.body.main.appendChild(div)
+    document.body.appendChild(div)
 
 }
