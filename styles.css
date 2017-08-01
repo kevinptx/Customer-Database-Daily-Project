@@ -12,6 +12,8 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   font-family: arial;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 div{
