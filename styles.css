@@ -1,0 +1,66 @@
+body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-family: arial;
+}
+
+div{
+  clear: both;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 300px;
+}
+
+div img{
+  width: 280px;
+  height: 280px;
+  margin-top: 50px;
+}
+
+.title{
+  float: left;
+  text-transform: uppercase;
+}
+
+.name{
+  width: 280px;
+  text-decoration: underline green;
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  text-transform: uppercase;
+}
+
+.email{
+  display: flex;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  margin-top: 20px;
+  font-size: 14px;
+
+}
+
+.address{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  width: 220px;
+  color: grey;
+  text-transform: capitalize;
+  font-size: 14px;
+
+}
+
+.phone{
+
+
+}
+
+.social {
+
+
+}
